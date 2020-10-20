@@ -100,7 +100,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
+                <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>luanjia-ossrh</serverId>
@@ -154,6 +154,8 @@
         <module>sandbox-mgr-provider</module>
         <module>sandbox-module-starter</module>
         <module>sandbox-debug-module</module>
+        <module>clock</module>
+        <module>BrokenClockTinkerModule</module>
     </modules>
 
     <dependencyManagement>
@@ -212,7 +214,6 @@
 
         </dependencies>
     </dependencyManagement>
-
 
     <!-- 这里是为了发布到MAVEN中央仓库所做的配置 -->
     <distributionManagement>
